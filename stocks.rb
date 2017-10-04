@@ -32,7 +32,6 @@ for stock_purchase in purchases do
     else
         purchase_summary_report[symbol] = Array.new
         purchase_summary_report[symbol].push({name: name, date: date, shares: shares, price: price, full_purchase_price: full_purchase_price})
-        full_price = purchase_summary_report[symbol][0][:full_purchase_price]
     end
 end
 
