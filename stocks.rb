@@ -25,7 +25,12 @@ for stock_purchase in purchases do
     price = stock_purchase[3]
     full_purchase_price = shares * price
     date = stock_purchase[2]
+
+    # Create Purchase History Report
+
     purchase_history_report.push( {name: name, date: date, shares: shares, price: price, full_purchase_price: full_purchase_price} )
+
+    # Create Purchase Summary Report
 
     if purchase_summary_report[symbol]
         purchase_summary_report[symbol].push({name: name, date: date, shares: shares, price: price, full_purchase_price: full_purchase_price})
